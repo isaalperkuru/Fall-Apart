@@ -11,6 +11,7 @@ namespace RPG.Core
         // Update is called once per frame
         void LateUpdate()
         {
+            //follow player
             transform.position = target.position;
         }
     }

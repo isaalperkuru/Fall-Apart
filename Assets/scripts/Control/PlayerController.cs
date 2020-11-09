@@ -13,18 +13,31 @@ namespace RPG.Control
         // Update is called once per frame
         void Update()
         {
-            InteractWithCombat();
-            InteractWithMovement();
+            if(InteractWithCombat()) return;
+            if(InteractWithMovement()) return;
+            
         }
 
-        private void InteractWithMovement()
+        private bool InteractWithMovement()
         {
-            if (Input.GetMouseButton(0)) //left click
+            //left click laser info
+            RaycastHit hit;
+            //if we hit something. 
+            //out allows us to return information about the location that a raycast has hit
+            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+            if (hasHit)
             {
-                MoveToCursor();
+                if (Input.GetMouseButton(0))
+                {
+                    GetComponent<Mover>().StartMoveAction(hit.point);
+                    //go to position ray (laser) hit
+                }
+                return true;
+
             }
+            return false;
         }
-        private void InteractWithCombat()
+        private bool InteractWithCombat()
         {
             //We take every ray hits and finding object we can attack
             //so the other objects cant block the ray hits to enemy
@@ -36,28 +49,13 @@ namespace RPG.Control
 
                 if (Input.GetMouseButtonDown(0))
                 {
-                    GetComponent<Fighter>().Attack(target);
+                    GetComponent<Fighter>().Attack(target); 
                 }
+                return true;
             }
+            return false;
         }
-
-        private void MoveToCursor()
-        {
-            //left click laser info
-            RaycastHit hit;
-            //if we hit something. 
-            //out allows us to return information about the location that a raycast has hit
-            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
-            if (hasHit)
-            {
-                GetComponent<Mover>().MoveTo(hit.point);
-                //go to position ray (laser) hit
-
-            }
-
-           
-        }
-        static Ray GetMouseRay()
+        private static Ray GetMouseRay()
         {
             //left click laser from cam
             return Camera.main.ScreenPointToRay(Input.mousePosition);

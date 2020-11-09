@@ -1,13 +1,20 @@
-﻿using System.Collections;
+﻿using RPG.Core;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 namespace RPG.Movement
 {
-    public class Mover : MonoBehaviour
+    public class Mover : MonoBehaviour, IAction
     {
-        //[SerializeField] Transform target;
+        NavMeshAgent navMeshAgent;
+        [SerializeField] Transform target;
+
+        private void Start()
+        {
+            navMeshAgent = GetComponent<NavMeshAgent>();
+        }
         void Update()
         {
 
@@ -17,7 +24,7 @@ namespace RPG.Movement
         private void UpdateAnimator()
         {
             //we taking velocity of navmesh
-            Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
+            Vector3 velocity = navMeshAgent.velocity;
             //we make velocity increase by the time while moving
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             //z velocity
@@ -25,27 +32,26 @@ namespace RPG.Movement
             //min velo to max velo informed
             GetComponent<Animator>().SetFloat("ForwardSpeed", speed);
         }
-        private void MoveToCursor()
-        {
-            //left click laser from cam
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            //left click laser info
-            RaycastHit hit;
-            //if we hit something. 
-            //out allows us to return information about the location that a raycast has hit
-            bool hasHit = Physics.Raycast(ray, out hit);
-            if (hasHit)
-            {
-                //go to position ray (laser) hit
-                MoveTo(hit.point);
-            }
-        }
-
         public void MoveTo(Vector3 destination)
         {
-            GetComponent<NavMeshAgent>().destination = destination;
+            //move while you are in the right to move
+            navMeshAgent.destination = destination;
+            navMeshAgent.isStopped = false;
         }
 
+        public void Cancel()
+        {
+            //Stop you can't go there :)
+            navMeshAgent.isStopped = true;
+        }
+        public void StartMoveAction(Vector3 destination)
+        {
+            //report action to schedular we are moving
+            GetComponent<ActionSchedular>().StartAction(this);
+            //move to where we want
+            MoveTo(destination);
+        }
+        
     }
 
 }
