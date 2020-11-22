@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Combat;
 using RPG.Movement;
-using RPG.Core;
 
 namespace RPG.Core
 {
@@ -22,6 +21,9 @@ namespace RPG.Core
             currentAction = action;
         }
 
-        
+        public void CancelCurrentAction()
+        {
+            StartAction(null);
+        }
     }
 }
