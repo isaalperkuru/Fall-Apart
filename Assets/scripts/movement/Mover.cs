@@ -10,6 +10,7 @@ namespace RPG.Movement
     {
         NavMeshAgent navMeshAgent;
         [SerializeField] Transform target;
+        [SerializeField] float maxSpeed = 5.7f;
         Health health;
         private void Start()
         {
@@ -33,10 +34,11 @@ namespace RPG.Movement
             //min velo to max velo informed
             GetComponent<Animator>().SetFloat("ForwardSpeed", speed);
         }
-        public void MoveTo(Vector3 destination)
+        public void MoveTo(Vector3 destination, float speedFraction)
         {
             //move while you are in the right to move
             navMeshAgent.destination = destination;
+            navMeshAgent.speed = maxSpeed * Mathf.Clamp01(speedFraction);
             navMeshAgent.isStopped = false;
         }
 
@@ -45,12 +47,12 @@ namespace RPG.Movement
             //Stop you can't go there :)
             navMeshAgent.isStopped = true;
         }
-        public void StartMoveAction(Vector3 destination)
+        public void StartMoveAction(Vector3 destination, float speedFraction)
         {
             //report action to schedular we are moving
             GetComponent<ActionSchedular>().StartAction(this);
             //move to where we want
-            MoveTo(destination);
+            MoveTo(destination, speedFraction);
         }
         
     }
