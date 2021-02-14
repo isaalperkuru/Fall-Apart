@@ -123,6 +123,11 @@ PrefabInstance:
       propertyPath: m_BaseOffset
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1042543072092834334, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 968053187614576801, guid: 82e3569a7388df54ea9c9a6a552c6804,
         type: 3}
       propertyPath: healthPoints
