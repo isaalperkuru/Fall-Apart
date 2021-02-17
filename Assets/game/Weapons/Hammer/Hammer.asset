@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd3bd69cb233c904c8c9940415992354, type: 3}
-  m_Name: Unarmed
+  m_Name: Hammer
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 0}
-  equippedPrefab: {fileID: 0}
-  weaponDamage: 3
-  weaponRange: 1.5
+  animatorOverride: {fileID: 22100000, guid: c50477b31f4163240ae545e758431b50, type: 2}
+  equippedPrefab: {fileID: 1933199797962205948, guid: b73eaeaa134ead3419b358318a6f7001,
+    type: 3}
+  weaponDamage: 20
+  weaponRange: 3
   isRightHanded: 1
   projectile: {fileID: 0}

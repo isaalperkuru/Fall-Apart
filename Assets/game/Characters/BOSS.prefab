@@ -9,11 +9,11 @@ CapsuleCollider:
   m_GameObject: {fileID: 3324472791733023198}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 1
-  m_Height: 2
+  m_Height: 3.6
   m_Direction: 1
-  m_Center: {x: 0, y: -0.17, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &502156413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +122,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: d41f9db2d63a10542b8b013aafe2ee6f,
         type: 2}
+    - target: {fileID: 1042543073198684449, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042543073198684449, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1042543073198684451, guid: 82e3569a7388df54ea9c9a6a552c6804,
         type: 3}
       propertyPath: m_Avatar
@@ -130,7 +140,7 @@ PrefabInstance:
     - target: {fileID: 1042543072092834334, guid: 82e3569a7388df54ea9c9a6a552c6804,
         type: 3}
       propertyPath: m_Radius
-      value: 0.3
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1042543072092834334, guid: 82e3569a7388df54ea9c9a6a552c6804,
         type: 3}
@@ -141,6 +151,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BaseOffset
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1042543072092834334, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: m_Height
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 968053187614576801, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: healthPoints
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82e3569a7388df54ea9c9a6a552c6804, type: 3}
