@@ -6,10 +6,11 @@ using System;
 using RPG.Core;
 using RPG.Saving;
 using RPG.Attributes;
+using RPG.Stats;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, ISaveable
+    public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
     {
         Health target;
 
@@ -106,12 +107,15 @@ namespace RPG.Combat
         {
             if (target == null) return;
 
+            float damage = GetComponent<BaseStats>().GetStat(Stats.Stats.Damage);
             if (currentWeapon.HasProjectile())
             {
-                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject);
+                currentWeapon.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject, damage);
             }
             else
-                target.TakeDamage(gameObject, currentWeapon.GetDamage());
+            {
+                target.TakeDamage(gameObject, damage);
+            }
         }
 
         void Shoot()
@@ -128,6 +132,20 @@ namespace RPG.Combat
         public Health GetTarget()
         {
             return target;
+        }
+        public IEnumerable<float> GetAdditiveModifiers(Stats.Stats stat)
+        {
+            if(stat == Stats.Stats.Damage)
+            {
+                yield return currentWeapon.GetDamage();
+            }
+        }
+        public IEnumerable<float> GetPercentageModifiers(Stats.Stats stat)
+        {
+            if (stat == Stats.Stats.Damage)
+            {
+                yield return currentWeapon.GetPercentageBonus();
+            }
         }
 
         public object CaptureState()
