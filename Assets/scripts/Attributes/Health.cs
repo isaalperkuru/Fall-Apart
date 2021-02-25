@@ -6,11 +6,14 @@ using RPG.Stats;
 using RPG.Core;
 using System;
 using Game.Utils;
+using UnityEngine.Events;
 
 namespace RPG.Attributes
 {
     public class Health : MonoBehaviour, ISaveable
     {
+        [SerializeField] UnityEvent takeDamage;
+
         LazyValue<float> healthPoints;
         bool isDead = false;
 
@@ -45,11 +48,12 @@ namespace RPG.Attributes
             print(gameObject.name + "took damage: " + damage);
 
             healthPoints.value = Mathf.Max(healthPoints.value - damage, 0);
+            takeDamage.Invoke();
             if (healthPoints.value == 0)
             {
                 Die();
                 AwardExperience(instigator);
-            }  
+            }
         }
 
         public float GetHealthPoints()
