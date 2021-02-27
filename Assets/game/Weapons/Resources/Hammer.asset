@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hammer
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: c50477b31f4163240ae545e758431b50, type: 2}
-  equippedPrefab: {fileID: 1933199797962205948, guid: b73eaeaa134ead3419b358318a6f7001,
+  equippedPrefab: {fileID: 2309909406319345763, guid: b73eaeaa134ead3419b358318a6f7001,
     type: 3}
   weaponDamage: 10
   percentageBonus: 0

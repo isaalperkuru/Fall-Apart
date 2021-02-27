@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Bow Red Projectile
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: 7748b88e852ec8d40bdc1192c1f1d66a, type: 2}
-  equippedPrefab: {fileID: 7334427579265742654, guid: 5681d3222894ebc46b510dd5108be487,
+  equippedPrefab: {fileID: 6366082755660334179, guid: 5681d3222894ebc46b510dd5108be487,
     type: 3}
   weaponDamage: 5
+  percentageBonus: 0
   weaponRange: 10
   isRightHanded: 0
   projectile: {fileID: 6077154129251242329, guid: ad1d127a3c027c04f987c481686a4698,

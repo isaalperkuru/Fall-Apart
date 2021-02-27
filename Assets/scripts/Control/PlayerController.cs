@@ -138,7 +138,6 @@ namespace RPG.Control
             {
                 total += Vector3.Distance(path.corners[i], path.corners[i + 1]);
             }
-            print(total);
             return total;
         }
 

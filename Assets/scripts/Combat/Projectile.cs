@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Core;
 using RPG.Attributes;
+using UnityEngine.Events;
+
 namespace RPG.Combat
 {
     public class Projectile : MonoBehaviour
@@ -15,6 +17,7 @@ namespace RPG.Combat
         [SerializeField] float maxLifeTime = 10;
         [SerializeField] GameObject[] destroyOnHit = null;
         [SerializeField] float lifeAfterImpact = 2;
+        [SerializeField] UnityEvent onHit;
         private Collider targetCollider;
         GameObject instigator = null;
 
@@ -59,6 +62,8 @@ namespace RPG.Combat
             target.TakeDamage(instigator, damage);
 
             speed = 0;
+
+            onHit.Invoke();
 
             if(hitEffect != null)
             {
