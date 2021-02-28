@@ -41,7 +41,7 @@ namespace RPG.Combat
             if (target == null) return;
             if (target.IsDead()) return;
             //if we in range combat target in this case 2f (weaponRange)
-            if (!GetIsInRange())
+            if (!GetIsInRange(target.transform))
             {
                 //move to target
                 GetComponent<Mover>().MoveTo(target.transform.position, 1f);
@@ -81,13 +81,18 @@ namespace RPG.Combat
         public bool CanAttack(GameObject combatTarget)
         {
             if (combatTarget == null) return false;
+            if (!GetComponent<Mover>().CanMoveTo(combatTarget.transform.position) &&
+                !GetIsInRange(combatTarget.transform)) 
+            { 
+                return false;
+            }
             Health targetToTest = combatTarget.GetComponent<Health>();
             return targetToTest != null && !targetToTest.IsDead();
         }
-        private bool GetIsInRange()
+        private bool GetIsInRange(Transform targetTransform)
         {
             //is distance with player and enemy is less than 2f
-            return Vector3.Distance(transform.position, target.transform.position) 
+            return Vector3.Distance(transform.position, targetTransform.position) 
                 < currentWeaponConfig.GetRange();
         }
 

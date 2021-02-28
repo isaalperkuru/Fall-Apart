@@ -40,10 +40,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseDistance: 5
   suspicionTime: 5
+  aggroCooldownTime: 5
   patrolPath: {fileID: 0}
   waypointTolerance: 1
   waypointDwellTime: 3
   patrolSpeedFraction: 0.4
+  shoutDistance: 5
 --- !u!1001 &197986796800856544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111,6 +113,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1673792921613932076, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6733585160778505380, guid: 82e3569a7388df54ea9c9a6a552c6804,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -151,6 +158,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BaseOffset
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 968053187614576801, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 968053187614576801, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 968053187614576801, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 968053187614576801, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2494519300887691654}
+    - target: {fileID: 968053187614576801, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Aggravate
+      objectReference: {fileID: 0}
+    - target: {fileID: 968053187614576801, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1954452519840590595, guid: 82e3569a7388df54ea9c9a6a552c6804,
         type: 3}
