@@ -6,13 +6,14 @@ using Game.Saving;
 using RPG.Stats;
 using System.Collections.Generic;
 using UnityEngine;
+using Game.Inventories;
 
 namespace RPG.Combat
 {
     public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
     {
         Health target;
-
+        Equipment equipment;
         [SerializeField] float timeBetweenAttacks = 1f;
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
@@ -26,6 +27,11 @@ namespace RPG.Combat
         {
             currentWeaponConfig = defaultWeapon;
             currentWeapon = new LazyValue<Weapon>(SetupDefaultWeapon);
+            equipment = GetComponent<Equipment>();
+            if (equipment)
+            {
+                equipment.equipmentUpdated += UpdateWeapon;
+            }
         }
 
         private void Start()
@@ -146,6 +152,13 @@ namespace RPG.Combat
         {
             currentWeaponConfig = weapon;
             currentWeapon.value = AttachWeapon(weapon);
+        }
+
+        private void UpdateWeapon()
+        {
+            var weapon = equipment.GetItemInSlot(EquipLocation.Weapon) as WeaponConfig;
+            if (weapon == null) EquipWeapon(defaultWeapon);
+            else EquipWeapon(weapon);
         }
 
         private Weapon AttachWeapon(WeaponConfig weapon)

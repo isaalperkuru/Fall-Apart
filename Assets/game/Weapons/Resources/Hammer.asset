@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3bd69cb233c904c8c9940415992354, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
+  itemID: 643d51db-985a-4c7c-b4a2-474db28e6b2d
+  displayName: Hammer
+  description: Default hammer
+  icon: {fileID: 21300000, guid: ec22508be0cdfba4abbaeb770bef08aa, type: 3}
+  pickup: {fileID: 6413177070931123309, guid: 7dbad4f4eacdf974bbe24f274db4043a, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: c50477b31f4163240ae545e758431b50, type: 2}
   equippedPrefab: {fileID: 2309909406319345763, guid: b73eaeaa134ead3419b358318a6f7001,
     type: 3}
