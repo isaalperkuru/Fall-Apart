@@ -1,0 +1,1646 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d29bc848000689644a587c7ebd60be66, type: 3}
+  m_Name: Default Enemy Drops
+  m_EditorClassIdentifier: 
+  potentialDrops:
+  - item: {fileID: 11400000, guid: 1f00f045f322511428740fedd213e2cf, type: 2}
+    relativeChance:
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: e7dae52c4572baa4c8552eb1794965bf, type: 2}
+    relativeChance:
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: d700fa45364e313499926e815081b735, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: c3c3e509dee7b2943bc0617e13ac5e7a, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 5e78475af05624640a38cbad8bff0df2, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: ba055c63a21455b4da9a4f9588a0d9d9, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 7e457ac6d68dfbb4b80b261d9bcc2bc7, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: aedb8a80b88c3b04198a44316c7a3bf8, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 11bf43654129d254a91ee1520d4e37bc, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: e6929fbb6c011014da4b329b9808951b, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 66804100ad9056d4bb1b21a9e65fe76f, type: 2}
+    relativeChance:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: b33d22f2745d8934fb5184989a5bdeac, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: e96d4d379d8be5241b6123190176dd1a, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: fa98a6ad453fed14aa8750295a2aa660, type: 2}
+    relativeChance:
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 0eb10dc30f64dd24c9c45094d8f103b5, type: 2}
+    relativeChance:
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: db5a29a42075f064f9694f9b394b340c, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 0fe6615f2b8c1aa498c7dfbca02da1f3, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: ac1a767b2e6020448aa716adb9867917, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 11f5c671ac1069d4a9338cf0b1b6f08f, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 3a0f6d4f49a25f14fa3a62dedd30a606, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 9e306bc40f7b11d458bd135137d603cc, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 0afc27e141e0a3d4a96070e239694cf7, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 78e9924f058c8cf4085db6fd26296092, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 4863539616c3ecd4e8db0bb899ad118e, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 1
+    - 1
+    - 1
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 8407a707a513b6b469d94a3bcea2d1f3, type: 2}
+    relativeChance:
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 18697b2febfdea946afa1e8d263e8d97, type: 2}
+    relativeChance:
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 3af292ea34fe79942ad8874c8436bf97, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: c3c3e509dee7b2943bc0617e13ac5e7a, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 4ad377493c1c52846b0b1903d343c797, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: d90a48870953664449b245750112e679, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: da2a73b6ab90a594ea0c65f1e1816c57, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: c242cf00345b98949a2f659054c26c33, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 73f364228f0f9804193d3c7fbc55e5f0, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 83effcbfb7a023e4c930014e4c921519, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 7cd59f23a243ccc458856ad1d013b8a6, type: 2}
+    relativeChance:
+    - 20
+    - 40
+    - 20
+    - 40
+    - 20
+    - 40
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 0300000003000000050000000500000008000000080000000a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    maxNumber: 0300000003000000050000000500000008000000080000000a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - item: {fileID: 11400000, guid: a1ab593b2fa2a4a4da30e105c2e7cd6f, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 40
+    - 20
+    - 40
+    - 20
+    - 40
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 0000000000000000000000000000000000000000000000000000000003000000030000000500000005000000080000000800000000000000000000000000000000000000000000000000000000000000
+    maxNumber: 0000000000000000000000000000000000000000000000000000000003000000030000000500000005000000080000000800000000000000000000000000000000000000000000000000000000000000
+  - item: {fileID: 11400000, guid: 856cef15be95f6f4eba84a32814ef9e9, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 40
+    - 20
+    - 40
+    - 20
+    - 40
+    - 20
+    - 40
+    minNumber: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000300000003000000050000000500000008000000080000000a000000
+    maxNumber: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000300000003000000050000000500000008000000080000000a000000
+  - item: {fileID: 11400000, guid: 950f8247ae9160d478ad4db1cc48938f, type: 2}
+    relativeChance:
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 860448c82bc127a479932536150d90cf, type: 2}
+    relativeChance:
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: d97571b5f450ecb4f863abb7dc9db5a9, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 6dbbab9a411392440a8a39a3ddc86afa, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 647a3c63d1053024a91426788518c485, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 2bd40c5513044b74888fe2c3c8fb161c, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: d66023ffa94862941ba429fef2b2a5b9, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 70c0e257b93601d43a49afc99e194f9a, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: d1c781ab9f8659d4c8d0038c557abd76, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 7c330d02a44d21247b21f60e29b4bf5d, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 219c783ab0370154799416af6b235a89, type: 2}
+    relativeChance:
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 729bc62b9faac854ba72ca2e1750161d, type: 2}
+    relativeChance:
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: a1e703d4af1e6b643aa78fe64804a6c7, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 9f489221665f464488115e44f4418629, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 07c5fd3cf948d254ba04826f3f9d6c8a, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: b223d50d7f6a6864bbe8d0d5aa5a25cc, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: c6fe3ce1010196349a8d3ab87b120a83, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 756147a9480081043a74838fa199bca4, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: ce9d32968eb05ac498846d0a83c1cdb2, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 01c3a18c745d5c5489d6f0ed0c630268, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 1a67afc34e3ee9842bae54ec1c00762e, type: 2}
+    relativeChance:
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 47ff320716cdc4f41b4b47bf07bdd9cc, type: 2}
+    relativeChance:
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 0e8eebbffdca3984cbf1c471d55ed988, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: d705a1c467d81d24f8e921814f59705b, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 2c78c57f13b93954ba6b3bf9e91249ea, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: caebb3655d31fb848a15e71431ad855d, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 3eb994c8a9c9e88408c822c4d4185f84, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 659660d20e90a9745855ef02fed2d327, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 5a41d5010b7046a41b92c1d7fbe0ce86, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    - 0
+    - 0
+    minNumber: 
+    maxNumber: 
+  - item: {fileID: 11400000, guid: 5fc0748bc2264e945b58992dacca62f0, type: 2}
+    relativeChance:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 1
+    - 5
+    - 10
+    - 20
+    minNumber: 
+    maxNumber: 
+  dropChancePercentage:
+  - 100
+  - 95
+  - 90
+  - 85
+  - 80
+  - 75
+  - 70
+  - 65
+  - 60
+  - 55
+  - 50
+  - 45
+  - 40
+  - 35
+  - 30
+  - 25
+  - 25
+  - 25
+  - 25
+  - 25
+  minDrops: 0100000001000000010000000100000001000000010000000100000001000000010000000100000002000000020000000200000002000000020000000200000002000000020000000200000002000000
+  maxDrops: 0200000002000000020000000200000002000000030000000300000003000000030000000300000004000000040000000400000004000000040000000500000005000000050000000500000005000000

@@ -9,17 +9,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f20eb1792e8048a46bf5c7c520a3ea3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e0703b8c995031438798489f4e68561, type: 3}
   m_Name: Necklace
   m_EditorClassIdentifier: 
-  itemID: 20370729-5dd8-43b5-aeca-4e2e85b2f099
-  displayName: Neckless
-  description: 'Wooden Neckless from your sister. It reminds you of her
+  itemID: ffea8dc2-c5ae-4b85-98d5-9eeea4b4e40d
+  displayName: Necklace
+  description: 'Wooden Necklace from your sister. It reminds you of her
 
-    +30 Health
+    +%110 Health
 
-    +5 damage'
+    +%110 damage'
   icon: {fileID: 21300000, guid: 0e123cfdc54a3ca4684816a34167a566, type: 3}
   pickup: {fileID: 0}
   stackable: 0
   allowedEquipLocation: 1
+  additiveModifiers: []
+  percentageModifiers:
+  - stat: 0
+    value: 10
+  - stat: 3
+    value: 10

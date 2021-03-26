@@ -52,12 +52,12 @@ namespace Game.Saving
             File.Delete(GetPathFromSaveFile(saveFile));
         }
 
-        // PRIVATE
-
-        private void Load(string saveFile)
+        public void Load(string saveFile)
         {
             RestoreState(LoadFile(saveFile));
         }
+
+        // PRIVATE
 
         private Dictionary<string, object> LoadFile(string saveFile)
         {

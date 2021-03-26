@@ -10,7 +10,7 @@ using Game.Inventories;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
+    public class Fighter : MonoBehaviour, IAction, ISaveable
     {
         Health target;
         Equipment equipment;
@@ -170,20 +170,6 @@ namespace RPG.Combat
         public Health GetTarget()
         {
             return target;
-        }
-        public IEnumerable<float> GetAdditiveModifiers(Stats.Stats stat)
-        {
-            if(stat == Stats.Stats.Damage)
-            {
-                yield return currentWeaponConfig.GetDamage();
-            }
-        }
-        public IEnumerable<float> GetPercentageModifiers(Stats.Stats stat)
-        {
-            if (stat == Stats.Stats.Damage)
-            {
-                yield return currentWeaponConfig.GetPercentageBonus();
-            }
         }
 
         public object CaptureState()

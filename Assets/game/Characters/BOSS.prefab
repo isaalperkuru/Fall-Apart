@@ -112,31 +112,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3153792759765358943, guid: 9b720eb3cee55b04690399655cc4f430,
-        type: 3}
-      propertyPath: characterClass
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 921189086078376958, guid: 9b720eb3cee55b04690399655cc4f430,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 921189086078376958, guid: 9b720eb3cee55b04690399655cc4f430,
-        type: 3}
-      propertyPath: m_Height
-      value: 2.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4624284221818028383, guid: 9b720eb3cee55b04690399655cc4f430,
-        type: 3}
-      propertyPath: m_Height
-      value: 3.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4624284221818028383, guid: 9b720eb3cee55b04690399655cc4f430,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9203855456928555412, guid: 9b720eb3cee55b04690399655cc4f430,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -156,6 +131,37 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2.041
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153792759765358943, guid: 9b720eb3cee55b04690399655cc4f430,
+        type: 3}
+      propertyPath: characterClass
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347908643393175138, guid: 9b720eb3cee55b04690399655cc4f430,
+        type: 3}
+      propertyPath: dropLibrary
+      value: 
+      objectReference: {fileID: 11400000, guid: 6f14212237f2ccb4181bb2b26b5eabda,
+        type: 2}
+    - target: {fileID: 921189086078376958, guid: 9b720eb3cee55b04690399655cc4f430,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 921189086078376958, guid: 9b720eb3cee55b04690399655cc4f430,
+        type: 3}
+      propertyPath: m_Height
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4624284221818028383, guid: 9b720eb3cee55b04690399655cc4f430,
+        type: 3}
+      propertyPath: m_Height
+      value: 3.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4624284221818028383, guid: 9b720eb3cee55b04690399655cc4f430,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b720eb3cee55b04690399655cc4f430, type: 3}

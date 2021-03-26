@@ -7,6 +7,7 @@ using RPG.Core;
 using System;
 using Game.Utils;
 using UnityEngine.Events;
+using RPG.SceneManagement;
 
 namespace RPG.Attributes
 {
@@ -14,7 +15,6 @@ namespace RPG.Attributes
     {
         [SerializeField] TakeDamageEvent takeDamage;
         [SerializeField] UnityEvent onDie;
-
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float>
         {
@@ -60,6 +60,7 @@ namespace RPG.Attributes
                 onDie.Invoke();
                 Die();
                 AwardExperience(instigator);
+                
             }
         }
         public void Heal(float healthToRestore)

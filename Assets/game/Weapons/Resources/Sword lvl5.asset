@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3bd69cb233c904c8c9940415992354, type: 3}
+  m_Name: Sword lvl5
+  m_EditorClassIdentifier: 
+  itemID: 0b1f40b9-c31e-458c-a18e-9b8c173dc5ac
+  displayName: Level 5 Sword
+  description: 'Level 5 Sword
+
+    +25 damage'
+  icon: {fileID: 21300000, guid: 5fd50594014b70e48bd6993443d46b32, type: 3}
+  pickup: {fileID: 6413177070931123309, guid: e3a5dc6d6883ccb43ad8708e0cdc7d78, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
+  animatorOverride: {fileID: 22100000, guid: 417e2b5315d969c4c81d439edde84542, type: 2}
+  equippedPrefab: {fileID: 7711879332269003604, guid: 07c7eadf58cd52f47b0673e9dff45444,
+    type: 3}
+  weaponDamage: 25
+  percentageBonus: 0
+  weaponRange: 2
+  isRightHanded: 1
+  projectile: {fileID: 0}

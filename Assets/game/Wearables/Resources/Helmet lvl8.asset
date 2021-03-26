@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e0703b8c995031438798489f4e68561, type: 3}
+  m_Name: Helmet lvl8
+  m_EditorClassIdentifier: 
+  itemID: 4ab8db5a-dd06-49bf-b0fa-1f9a5a550a6f
+  displayName: Level 8 Helmet
+  description: 'Level 8 Helmet
+
+    +160 Health Points'
+  icon: {fileID: 21300000, guid: fd6e4fc32c78509458fc45ea4a478ba8, type: 3}
+  pickup: {fileID: 6413177070931123309, guid: 7dbad4f4eacdf974bbe24f274db4043a, type: 3}
+  stackable: 0
+  allowedEquipLocation: 0
+  additiveModifiers:
+  - stat: 0
+    value: 160
+  percentageModifiers: []

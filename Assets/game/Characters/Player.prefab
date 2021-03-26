@@ -14,7 +14,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1001943565319306477
+--- !u!114 &2197943220753603789
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,9 +23,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 7336284923382556027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b11801ca435999e4e96afb1bcc282d56, type: 3}
+  m_Script: {fileID: 11500000, guid: 943f8a769b51a9a469c571a8f9dd4abc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2343138173093098267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7336284923382556027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af29fd331234b374a9bd4cf3f92ef38d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 3
+  dropLibrary: {fileID: 11400000, guid: 4293b8bc889c18545a0874c870af85f1, type: 2}
 --- !u!114 &3989365606116064400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fc28a888c18ce4a82d521912c49df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySize: 16
+  inventorySize: 24
 --- !u!114 &7317390361540453401
 MonoBehaviour:
   m_ObjectHideFlags: 0

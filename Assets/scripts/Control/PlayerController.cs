@@ -8,6 +8,7 @@ using RPG.Attributes;
 using System;
 using UnityEngine.EventSystems;
 using UnityEngine.AI;
+using Game.Inventories;
 
 namespace RPG.Control
 {
@@ -15,7 +16,13 @@ namespace RPG.Control
     {
         Health health;
 
-        
+        [SerializeField] KeyCode actionKey1 = KeyCode.Alpha1;
+        [SerializeField] KeyCode actionKey2 = KeyCode.Alpha2;
+        [SerializeField] KeyCode actionKey3 = KeyCode.Alpha3;
+        [SerializeField] KeyCode actionKey4 = KeyCode.Alpha4;
+        [SerializeField] KeyCode actionKey5 = KeyCode.Alpha5;
+        [SerializeField] KeyCode actionKey6 = KeyCode.Alpha6;
+
         [System.Serializable]
         struct CursorMapping
         {
@@ -37,6 +44,8 @@ namespace RPG.Control
         // Update is called once per frame
         void Update()
         {
+            CheckActionKeys();
+
             if (InteractWithUI()) return;
             if (health.IsDead())
             {
@@ -164,6 +173,34 @@ namespace RPG.Control
         {
             //left click laser from cam
             return Camera.main.ScreenPointToRay(Input.mousePosition);
+        }
+        private void CheckActionKeys()
+        {
+            var actionStore = GetComponent<ActionStore>();
+            if (Input.GetKeyDown(actionKey1))
+            {
+                actionStore.Use(0, gameObject);
+            }
+            if (Input.GetKeyDown(actionKey2))
+            {
+                actionStore.Use(1, gameObject);
+            }
+            if (Input.GetKeyDown(actionKey3))
+            {
+                actionStore.Use(2, gameObject);
+            }
+            if (Input.GetKeyDown(actionKey4))
+            {
+                actionStore.Use(3, gameObject);
+            }
+            if (Input.GetKeyDown(actionKey5))
+            {
+                actionStore.Use(4, gameObject);
+            }
+            if (Input.GetKeyDown(actionKey6))
+            {
+                actionStore.Use(5, gameObject);
+            }
         }
     }
 }

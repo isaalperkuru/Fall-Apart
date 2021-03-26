@@ -178,6 +178,7 @@ namespace Game.Inventories
         void ISaveable.RestoreState(object state)
         {
             var stateDict = (Dictionary<int, DockedItemRecord>)state;
+            stateDict.Clear();
             foreach (var pair in stateDict)
             {
                 AddAction(InventoryItem.GetFromID(pair.Value.itemID), pair.Key, pair.Value.number);
