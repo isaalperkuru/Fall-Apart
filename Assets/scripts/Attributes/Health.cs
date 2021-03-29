@@ -23,11 +23,19 @@ namespace RPG.Attributes
         LazyValue<float> healthPoints;
         bool isDead = false;
 
+        GameObject player;
+        public GameObject LoadScene;
         private void Awake()
         {
             healthPoints = new LazyValue<float>(GetInitialHealth);
+            player = GameObject.FindWithTag("Player");
+            
         }
+      
+        private void GetPortal(GameObject portal)
+        {
 
+        }
         private float GetInitialHealth()
         {
             return GetComponent<BaseStats>().GetStat(Stats.Stats.Health);
@@ -35,6 +43,7 @@ namespace RPG.Attributes
         private void Start()
         {
             healthPoints.ForceInit();
+            LoadScene = GameObject.Find("Saving");
         }
         private void OnEnable()
         {
@@ -93,7 +102,17 @@ namespace RPG.Attributes
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionSchedular>().CancelCurrentAction();
+            if (player.GetComponent<Health>().IsDead())
+            {
+                Invoke("Respawn", 3);
+            }
         }
+
+        private void Respawn()
+        {
+            LoadScene.GetComponent<SavingWrapper>().LoadFromLastSave();
+        }
+
         private void AwardExperience(GameObject instigator)
         {
             Experience experience = instigator.GetComponent<Experience>();

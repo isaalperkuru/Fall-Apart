@@ -150,6 +150,7 @@ namespace RPG.Combat
         }
         public void EquipWeapon(WeaponConfig weapon)
         {
+            if (GetComponent<Health>().IsDead()) return;
             currentWeaponConfig = weapon;
             currentWeapon.value = AttachWeapon(weapon);
         }

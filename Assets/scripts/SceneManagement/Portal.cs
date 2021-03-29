@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
 using RPG.Control;
+using RPG.Attributes;
 
 namespace RPG.SceneManagement
 {
@@ -21,9 +22,18 @@ namespace RPG.SceneManagement
         [SerializeField] float fadeOutTime = 1f;
         [SerializeField] float fadeInTime = 2f;
         [SerializeField] float fadeWaitTime = 0.5f;
+
+        GameObject boss;
+        private void Awake()
+        {
+            boss = GameObject.FindWithTag("Boss");
+        }
+
+
+
         private void OnTriggerEnter(Collider other)
         {
-            if(other.tag == "Player")
+            if(other.tag == "Player" && boss.GetComponent<Health>().IsDead())
             {
                 StartCoroutine(Transition());
             }

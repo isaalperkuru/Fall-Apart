@@ -27,7 +27,7 @@ namespace RPG.SceneManagement
         {
             if (Input.GetKeyDown(KeyCode.L))
             {
-                Load();
+                LoadFromLastSave();
             }
             if (Input.GetKeyDown(KeyCode.S))
             {
@@ -38,7 +38,10 @@ namespace RPG.SceneManagement
                 Delete();
             }
         }
-
+        public void LoadFromLastSave()
+        {
+            StartCoroutine(LoadLastScene());
+        }
         public void Save()
         {
             GetComponent<SavingSystem>().Save(defaultSaveFile);

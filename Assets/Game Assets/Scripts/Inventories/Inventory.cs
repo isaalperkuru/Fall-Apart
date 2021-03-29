@@ -166,6 +166,10 @@ namespace Game.Inventories
         private void Awake()
         {
             slots = new InventorySlot[inventorySize];
+            slots[0].item = InventoryItem.GetFromID("ffea8dc2-c5ae-4b85-98d5-9eeea4b4e40d");
+            slots[1].item = InventoryItem.GetFromID("248812de-5ded-46b6-bc09-fc05704e77f8");
+            slots[0].number = 1;
+            slots[1].number = 1;
         }
 
         /// <summary>

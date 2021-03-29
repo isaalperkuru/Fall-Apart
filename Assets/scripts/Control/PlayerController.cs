@@ -36,7 +36,7 @@ namespace RPG.Control
         [SerializeField] float raycastRadius = 1f;
 
         bool isDraggingUI = false;
-
+        const string defaultSaveFile = "save";
         private void Awake()
         {
             health = GetComponent<Health>();
@@ -57,7 +57,7 @@ namespace RPG.Control
 
             SetCursor(CursorType.None);
         }
-
+        
         private bool InteractWithComponent()
         {
             RaycastHit[] hits = RaycastAllSorted();
