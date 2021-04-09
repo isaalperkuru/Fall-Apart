@@ -36,7 +36,7 @@ namespace RPG.Control
         [SerializeField] float raycastRadius = 1f;
 
         bool isDraggingUI = false;
-        const string defaultSaveFile = "save";
+
         private void Awake()
         {
             health = GetComponent<Health>();
@@ -53,6 +53,7 @@ namespace RPG.Control
                 return;
             }
             if (InteractWithComponent()) return;
+            //checking every frame if there is an interaction with movement
             if(InteractWithMovement()) return;
 
             SetCursor(CursorType.None);
@@ -112,18 +113,23 @@ namespace RPG.Control
 
         private bool InteractWithMovement()
         {
-            
+            //target is a vector 3 will be store transformation data
             Vector3 target;
+            //has ray laser hit to something in the scene. Doing it with RaycastNavMesh function written.
             bool hasHit = RaycastNavMesh(out target);
+            //if there is hit
             if (hasHit)
             {
+                //if we can move to target position
                 if (!GetComponent<Mover>().CanMoveTo(target)) return false;
-
+                //if mouse right click is clicked
                 if (Input.GetMouseButton(0))
                 {
+                    //start the move action.
                     GetComponent<Mover>().StartMoveAction(target, 1f);
                     //go to position ray (laser) hit
                 }
+                //if mouse on moveable place update the cursor
                 SetCursor(CursorType.Movement);
                 return true;
 
@@ -133,21 +139,27 @@ namespace RPG.Control
 
         private bool RaycastNavMesh(out Vector3 target)
         {
+            //giving a default x=0,y=0,z=0 data for initialization.
             target = new Vector3();
 
             //left click laser info
             RaycastHit hit;
             //if we hit something. 
             //out allows us to return information about the location that a raycast has hit
+            //this function also updating hit because we use out for hit
             bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+            //if there is no hit
             if (!hasHit) return false;
+            //collecting navmesh hit data that is about navigation system for terrains in the scene. Unity gives you this navigation system.
             NavMeshHit navMeshHit;
+            //Finds the nearest point based on the NavMesh within a specified range.
             bool hasCastToNavMesh = NavMesh.SamplePosition(hit.point, out navMeshHit,
                 maxNavMeshProjectionDistance, NavMesh.AllAreas);
+            //if there is no path.
             if (!hasCastToNavMesh) return false;
-
+            //update target position nearest position to our target.
             target = navMeshHit.position;
-
+            //return true
             return true;
         }
 
@@ -172,6 +184,8 @@ namespace RPG.Control
         private static Ray GetMouseRay()
         {
             //left click laser from cam
+            //I return exact position from the camera because in the game there is no mouse cursor gameObject
+            //and returning exact position of the mouse ray from the camera is tricky but I used Unity method for solving this problem easily
             return Camera.main.ScreenPointToRay(Input.mousePosition);
         }
         private void CheckActionKeys()
