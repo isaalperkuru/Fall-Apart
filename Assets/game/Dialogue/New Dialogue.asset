@@ -46,6 +46,8 @@ MonoBehaviour:
     y: 159
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &114092657538560102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,6 +71,8 @@ MonoBehaviour:
     y: 173
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &114109783120736414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,6 +97,8 @@ MonoBehaviour:
     y: 78
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &114212324729432350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +123,8 @@ MonoBehaviour:
     y: 71
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &114242721127812720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +146,8 @@ MonoBehaviour:
     y: 26
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: Quest Aquired
 --- !u!114 &114391191664449180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +170,8 @@ MonoBehaviour:
     y: 73
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &114477242410204964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +195,8 @@ MonoBehaviour:
     y: 71
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &114499418316308444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +219,8 @@ MonoBehaviour:
     y: 26
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
 --- !u!114 &114829557897429856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,6 +242,8 @@ MonoBehaviour:
     y: 324
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: Attack
 --- !u!114 &114990947496964496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,3 +266,5 @@ MonoBehaviour:
     y: 290
     width: 200
     height: 100
+  onEnterAction: 
+  onExitAction: 
