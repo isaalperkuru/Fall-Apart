@@ -27,6 +27,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 0}
+  aiName: 
 --- !u!114 &8477238233651981948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +143,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6379905162245625924, guid: 82e3569a7388df54ea9c9a6a552c6804,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2989235937567508671, guid: 82e3569a7388df54ea9c9a6a552c6804, type: 3}
+    - {fileID: 968053187614576801, guid: 82e3569a7388df54ea9c9a6a552c6804, type: 3}
+    - {fileID: 6547604785471448084, guid: 82e3569a7388df54ea9c9a6a552c6804, type: 3}
+    - {fileID: 1042543073198684449, guid: 82e3569a7388df54ea9c9a6a552c6804, type: 3}
+    - {fileID: 1042543072092834329, guid: 82e3569a7388df54ea9c9a6a552c6804, type: 3}
+    - {fileID: 6379905162245625924, guid: 82e3569a7388df54ea9c9a6a552c6804, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 82e3569a7388df54ea9c9a6a552c6804, type: 3}
 --- !u!1 &9182093835403196595 stripped
 GameObject:

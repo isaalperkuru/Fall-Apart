@@ -7,7 +7,7 @@ namespace Game.UI
     public class ShowHideUI : MonoBehaviour
     {
         [SerializeField] KeyCode toggleKey = KeyCode.Escape;
-        [SerializeField] GameObject uiContainer = null;
+        [SerializeField] GameObject uiContainer;
 
         // Start is called before the first frame update
         void Start()
@@ -20,8 +20,13 @@ namespace Game.UI
         {
             if (Input.GetKeyDown(toggleKey))
             {
-                uiContainer.SetActive(!uiContainer.activeSelf);
+                Toggle();
             }
+        }
+
+        public void Toggle()
+        {
+            uiContainer.SetActive(!uiContainer.activeSelf);
         }
     }
 }
