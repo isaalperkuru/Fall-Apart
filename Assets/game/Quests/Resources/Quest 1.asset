@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Quest 1
   m_EditorClassIdentifier: 
   objectives:
-  - a
-  - b
-  - c
+  - reference: Boss
+    description: Kill The Boss
+  rewards:
+  - number: 10
+    item: {fileID: 11400000, guid: 7cd59f23a243ccc458856ad1d013b8a6, type: 2}

@@ -23,6 +23,10 @@ MonoBehaviour:
   - {fileID: 114069148783671470}
   - {fileID: 114829557897429856}
   - {fileID: 114242721127812720}
+  - {fileID: 114538805137247578}
+  - {fileID: 114141475240154024}
+  - {fileID: 114695852491789056}
+  - {fileID: 114098398790860976}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &114069148783671470
 MonoBehaviour:
@@ -48,6 +52,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &114092657538560102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,6 +71,8 @@ MonoBehaviour:
   children:
   - 482edcb0-d5aa-4354-a9b5-930dfa4ddc2f
   - 8ed4de85-a53e-487f-8822-d7066392c18c
+  - 943a5587-228f-4166-b1a3-f5a13495607d
+  - 9dc3480b-4896-40b2-bced-c1c11bcd28d4
   rect:
     serializedVersion: 2
     x: 37
@@ -73,6 +81,39 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 2
+        negate: 0
+--- !u!114 &114098398790860976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 1dc1cc2b-914f-4746-8fde-02092bd26bb8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior! Here is your reward! You can come back from where you came
+    from.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 533
+    y: 521
+    width: 200
+    height: 100
+  onEnterAction: BossDied
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &114109783120736414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,6 +140,33 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114141475240154024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: bad0b245-57e6-419b-af73-f015beca6e17
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oops! I have dementia
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 532
+    y: 408
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &114212324729432350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +193,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &114242721127812720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,8 +216,10 @@ MonoBehaviour:
     y: 26
     width: 200
     height: 100
-  onEnterAction: 
-  onExitAction: Quest Aquired
+  onEnterAction: OldMan
+  onExitAction: GiveQuest
+  condition:
+    and: []
 --- !u!114 &114391191664449180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +244,13 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 1
+        negate: 1
 --- !u!114 &114477242410204964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +276,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
 --- !u!114 &114499418316308444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,6 +302,84 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114538805137247578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 943a5587-228f-4166-b1a3-f5a13495607d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm on my way old man!
+  children:
+  - bad0b245-57e6-419b-af73-f015beca6e17
+  rect:
+    serializedVersion: 2
+    x: 282
+    y: 408
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 1
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 1
+        negate: 1
+--- !u!114 &114695852491789056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 9dc3480b-4896-40b2-bced-c1c11bcd28d4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I killed them all!
+  children:
+  - 1dc1cc2b-914f-4746-8fde-02092bd26bb8
+  rect:
+    serializedVersion: 2
+    x: 284
+    y: 521
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 1
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 1
+        negate: 0
+      - predicate: IsBossDied
+        parameter:
+        - Quest 1
+        negate: 0
 --- !u!114 &114829557897429856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +402,9 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: 
-  onExitAction: Attack
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &114990947496964496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,3 +429,5 @@ MonoBehaviour:
     height: 100
   onEnterAction: 
   onExitAction: 
+  condition:
+    and: []

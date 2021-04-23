@@ -8,13 +8,17 @@ using System;
 using Game.Utils;
 using UnityEngine.Events;
 using RPG.SceneManagement;
+using RPG.Quests;
 
 namespace RPG.Attributes
 {
-    public class Health : MonoBehaviour, ISaveable
+    public class Health : MonoBehaviour, ISaveable, IPredicateEvaluator
     {
         [SerializeField] TakeDamageEvent takeDamage;
         [SerializeField] UnityEvent onDie;
+
+        GameObject boss;
+
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float>
         {
@@ -29,7 +33,7 @@ namespace RPG.Attributes
         {
             healthPoints = new LazyValue<float>(GetInitialHealth);
             player = GameObject.FindWithTag("Player");
-            
+            boss = GameObject.FindWithTag("Boss");
         }
       
         private void GetPortal(GameObject portal)
@@ -139,6 +143,23 @@ namespace RPG.Attributes
             }
         }
 
+        public bool? Evaluate(string predicate, string[] parameters)
+        {
+            switch (predicate)
+            {
+                case "IsBossDied":
+                    return IsBossDied(parameters);                
+            }
+
+            return null;
+        }
+
+        private bool IsBossDied(string[] parameters)
+        {
+            string bss = "Boss";
+            GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>().CompleteObjective(Quest.GetByName(parameters[0]), bss);
+            return boss.GetComponent<Health>().IsDead();
+        }
     }
 }
 

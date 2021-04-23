@@ -23,6 +23,7 @@ namespace RPG.Combat
         float timeSinceLastAttack = 0;
         LazyValue<Weapon> currentWeapon;
 
+
         private void Awake()
         {
             currentWeaponConfig = defaultWeapon;

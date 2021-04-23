@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdc46aa22a80d14391a43324595e420, type: 3}
+  m_Name: New Dialogue 1
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114830989263166692}
+  - {fileID: 114906954332030456}
+  - {fileID: 114242635261593602}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &114242635261593602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: e3b4e602-03c9-4b56-a575-20ec5a4b4ab0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Okay!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 501
+    y: 72
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114830989263166692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 94b91e03-ec02-4b7b-b630-a73a28d903a8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Talk to old man
+  children:
+  - a0340de4-1a1c-45ae-b1d2-0a938491fc74
+  rect:
+    serializedVersion: 2
+    x: 28
+    y: 64
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: TalkToOldMan
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 2
+        negate: 0
+--- !u!114 &114906954332030456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: a0340de4-1a1c-45ae-b1d2-0a938491fc74
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm on my way
+  children:
+  - e3b4e602-03c9-4b56-a575-20ec5a4b4ab0
+  rect:
+    serializedVersion: 2
+    x: 251
+    y: 72
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 2
+        negate: 0
