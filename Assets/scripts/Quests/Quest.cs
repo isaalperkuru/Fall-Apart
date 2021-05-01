@@ -11,6 +11,7 @@ namespace RPG.Quests
     {
         [SerializeField] List<Objective> objectives = new List<Objective>();
         [SerializeField] List<Reward> rewards = new List<Reward>();
+        QuestStatus status;
 
         [System.Serializable]
         public class Reward
@@ -56,18 +57,6 @@ namespace RPG.Quests
                 }
             }
             return false;
-        }
-
-        public Objective GetObjective(string objectiveRef)
-        {
-            foreach (var objective in objectives)
-            {
-                if (objective.reference == objectiveRef)
-                {
-                    return objective;
-                }
-            }
-            return null;
         }
 
         public static Quest GetByName(string questName)

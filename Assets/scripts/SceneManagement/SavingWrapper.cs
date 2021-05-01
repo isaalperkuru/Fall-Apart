@@ -13,10 +13,6 @@ namespace RPG.SceneManagement
         [SerializeField] float FadeInTime = 0.2f;
         private bool isRunning = false;
 
-        private void Awake()
-        {
-            StartCoroutine(LoadLastScene());
-        }
         private IEnumerator LoadLastScene()
         {
             isRunning = true;

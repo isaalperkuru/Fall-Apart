@@ -110,8 +110,8 @@ MonoBehaviour:
     y: 521
     width: 200
     height: 100
-  onEnterAction: BossDied
-  onExitAction: 
+  onEnterAction: 
+  onExitAction: Quest3
   condition:
     and: []
 --- !u!114 &114109783120736414
@@ -376,10 +376,11 @@ MonoBehaviour:
         parameter:
         - Quest 1
         negate: 0
-      - predicate: IsBossDied
+    - or:
+      - predicate: CompletedQuest
         parameter:
-        - Quest 1
-        negate: 0
+        - Quest 3
+        negate: 1
 --- !u!114 &114829557897429856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,4 +431,9 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    and: []
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 1
+        negate: 1

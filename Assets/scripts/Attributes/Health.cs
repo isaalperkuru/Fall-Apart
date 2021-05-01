@@ -156,8 +156,6 @@ namespace RPG.Attributes
 
         private bool IsBossDied(string[] parameters)
         {
-            string bss = "Boss";
-            GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>().CompleteObjective(Quest.GetByName(parameters[0]), bss);
             return boss.GetComponent<Health>().IsDead();
         }
     }
