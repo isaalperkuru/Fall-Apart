@@ -22,6 +22,7 @@ namespace RPG.SceneManagement
         [SerializeField] float fadeOutTime = 1f;
         [SerializeField] float fadeInTime = 2f;
         [SerializeField] float fadeWaitTime = 0.5f;
+        [SerializeField] bool shouldBossDied = false;
 
         GameObject boss;
         private void Awake()
@@ -33,9 +34,19 @@ namespace RPG.SceneManagement
 
         private void OnTriggerEnter(Collider other)
         {
-            if(other.tag == "Player" && boss.GetComponent<Health>().IsDead())
+            if (other.tag == "Player")
             {
-                StartCoroutine(Transition());
+                if (shouldBossDied)
+                {
+                    if (boss.GetComponent<Health>().IsDead())
+                    {
+                        StartCoroutine(Transition());
+                    }
+                }
+                else
+                {
+                    StartCoroutine(Transition());
+                }
             }
         }
         private IEnumerator Transition()

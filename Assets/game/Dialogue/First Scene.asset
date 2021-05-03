@@ -1,0 +1,310 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdc46aa22a80d14391a43324595e420, type: 3}
+  m_Name: First Scene
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114446426328519666}
+  - {fileID: 114094909230682772}
+  - {fileID: 114396545536298200}
+  - {fileID: 114287215010585794}
+  - {fileID: 114115593769586058}
+  - {fileID: 114724093735244954}
+  - {fileID: 114455228319168648}
+  - {fileID: 114039406412040714}
+  - {fileID: 114749428833903820}
+  - {fileID: 114775451559465534}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &114039406412040714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 763ef870-36e9-42fd-80a0-57374bd306d5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I know you can !
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1753
+    y: 40
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114094909230682772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 1a56e685-b82f-4e35-bddd-11faac6bf63a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'This kingdom killed my family and separated my sister from me, and you are
+    asking me to serve you. '
+  children:
+  - c7e8f0b0-c513-4b64-9ecf-5effea353305
+  rect:
+    serializedVersion: 2
+    x: 289
+    y: 43
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 1
+        negate: 1
+--- !u!114 &114115593769586058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 44571db1-7715-4a95-a293-695c2e1ecb6d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'You don''t have to worry about the king recently the king was killed. They
+    say poisoned. There are rumors that the witch queen did it. Now the queen rules
+    the western kingdom. Long live our queen! Perhaps we should now change our name
+    to "the Queen''s warriors". '
+  children:
+  - 965eae2b-c8dc-4562-b89a-74ba9b52d6bf
+  rect:
+    serializedVersion: 2
+    x: 1050
+    y: 44
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114287215010585794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 40efa2a7-b5fe-4a2b-b513-03b7dba7d200
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'I still have anger against the king in me, but it''s been a long time. Thank
+    you, commander, for treating and training me very well here. I only serve you,
+    not the king. Why did you want to see me? '
+  children:
+  - 44571db1-7715-4a95-a293-695c2e1ecb6d
+  rect:
+    serializedVersion: 2
+    x: 791
+    y: 44
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114396545536298200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: c7e8f0b0-c513-4b64-9ecf-5effea353305
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Listen, warrior, there was war all over Cerasus at that time. Every kingdom
+    has bullied innocent people, and maybe that's why we found our trouble. One of
+    those victims was the witch queen. The witch queen threatens all of humanity.
+    Now the only war of all kingdoms is against her. We need a good warrior like you.
+    I was going to call you too. Good you came.
+  children:
+  - 40efa2a7-b5fe-4a2b-b513-03b7dba7d200
+  rect:
+    serializedVersion: 2
+    x: 539
+    y: 43
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114446426328519666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 8182e94b-125c-4ea9-bb0a-c7dc018df83e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: What is wrong warrior ?
+  children:
+  - 1a56e685-b82f-4e35-bddd-11faac6bf63a
+  - d696872b-f94b-4bfd-8b8d-f80769470c5b
+  rect:
+    serializedVersion: 2
+    x: 45
+    y: 43
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114455228319168648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: ae7c8224-b4f3-40c9-8dd0-1c346b3f0ed8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Don''t worry, Commander, I''ll show them what it means to attack innocent
+    people. '
+  children:
+  - 763ef870-36e9-42fd-80a0-57374bd306d5
+  rect:
+    serializedVersion: 2
+    x: 1524
+    y: 41
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: Quest2
+  condition:
+    and: []
+--- !u!114 &114724093735244954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 965eae2b-c8dc-4562-b89a-74ba9b52d6bf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'I called you because the witch queen''s soldiers were attacking 10 villages.
+    All other warriors will set out for the witch queen''s main army. I want you to
+    go to these villages and kill his other soldiers. Talk to the old man in the first
+    village and he will give you a sword. If a single warrior can handle this job,
+    it''s you. You are the best warrior I have ever seen! '
+  children:
+  - ae7c8224-b4f3-40c9-8dd0-1c346b3f0ed8
+  rect:
+    serializedVersion: 2
+    x: 1285
+    y: 41
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114749428833903820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: d696872b-f94b-4bfd-8b8d-f80769470c5b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Nothing
+  children:
+  - 026d4623-a93e-483a-a661-fc9c914d3c0e
+  rect:
+    serializedVersion: 2
+    x: 289
+    y: 146
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 1
+        negate: 0
+--- !u!114 &114775451559465534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 026d4623-a93e-483a-a661-fc9c914d3c0e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Okay
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 520
+    y: 148
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

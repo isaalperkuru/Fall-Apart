@@ -1,0 +1,438 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdc46aa22a80d14391a43324595e420, type: 3}
+  m_Name: Level 1
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114092657538560102}
+  - {fileID: 114990947496964496}
+  - {fileID: 114391191664449180}
+  - {fileID: 114212324729432350}
+  - {fileID: 114477242410204964}
+  - {fileID: 114109783120736414}
+  - {fileID: 114499418316308444}
+  - {fileID: 114069148783671470}
+  - {fileID: 114829557897429856}
+  - {fileID: 114242721127812720}
+  - {fileID: 114538805137247578}
+  - {fileID: 114141475240154024}
+  - {fileID: 114695852491789056}
+  - {fileID: 114098398790860976}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &114069148783671470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 798b94d3-e623-4279-a1df-df959a2c97cf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'There is a commander skeleton ?! Sorry, I have work to do '
+  children:
+  - 51663f87-ffb4-4a79-871c-c77c1b2ba8d5
+  rect:
+    serializedVersion: 2
+    x: 1291
+    y: 159
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114092657538560102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 6aed39ca-6634-49e9-a44b-f8255d617077
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hi there warrior we need help!
+  children:
+  - 482edcb0-d5aa-4354-a9b5-930dfa4ddc2f
+  - 8ed4de85-a53e-487f-8822-d7066392c18c
+  - 943a5587-228f-4166-b1a3-f5a13495607d
+  - 9dc3480b-4896-40b2-bced-c1c11bcd28d4
+  rect:
+    serializedVersion: 2
+    x: 37
+    y: 173
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 1
+        negate: 0
+--- !u!114 &114098398790860976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 1dc1cc2b-914f-4746-8fde-02092bd26bb8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior! Here is your reward! You can come back where you came from.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 533
+    y: 521
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: Quest3
+  condition:
+    and: []
+--- !u!114 &114109783120736414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: b6a81354-9231-47ff-b372-7028de48fd25
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: They are in the woods! you can follow the dirt path but be carefull warrior
+    they have a commander! He is mighty!
+  children:
+  - f6118c43-1922-4370-bf40-17ee708223e8
+  - 798b94d3-e623-4279-a1df-df959a2c97cf
+  rect:
+    serializedVersion: 2
+    x: 1030
+    y: 78
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114141475240154024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: bad0b245-57e6-419b-af73-f015beca6e17
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oops! I have dementia
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 532
+    y: 408
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114212324729432350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: b9ba7761-bfe8-49d3-8377-5da35c6c6958
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Witch queen was here! She kill people with her magic! and summoned bunch of
+    skeleton!
+  children:
+  - 41d6c3f8-8eee-4b79-a219-f44bee3f9226
+  - 482edcb0-d5aa-4354-a9b5-930dfa4ddc2f
+  rect:
+    serializedVersion: 2
+    x: 532
+    y: 71
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114242721127812720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 35cded75-4c49-4874-8208-2b0af8889dbf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior! You are a hero! I send some man to get rid of barriers
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1515
+    y: 26
+    width: 200
+    height: 100
+  onEnterAction: OldMan
+  onExitAction: GiveQuest
+  condition:
+    and: []
+--- !u!114 &114391191664449180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 8ed4de85-a53e-487f-8822-d7066392c18c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What is wrong ?
+  children:
+  - b9ba7761-bfe8-49d3-8377-5da35c6c6958
+  rect:
+    serializedVersion: 2
+    x: 276
+    y: 73
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 2
+        negate: 1
+--- !u!114 &114477242410204964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 41d6c3f8-8eee-4b79-a219-f44bee3f9226
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I saw couple on my way here and break their skulls. Tell me old man where
+    are the others ?
+  children:
+  - b6a81354-9231-47ff-b372-7028de48fd25
+  rect:
+    serializedVersion: 2
+    x: 782
+    y: 71
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114499418316308444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: f6118c43-1922-4370-bf40-17ee708223e8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Don't worry old man I will save this town from the evil!
+  children:
+  - 35cded75-4c49-4874-8208-2b0af8889dbf
+  rect:
+    serializedVersion: 2
+    x: 1265
+    y: 26
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114538805137247578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 943a5587-228f-4166-b1a3-f5a13495607d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm on my way old man!
+  children:
+  - bad0b245-57e6-419b-af73-f015beca6e17
+  rect:
+    serializedVersion: 2
+    x: 282
+    y: 408
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 2
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 2
+        negate: 1
+--- !u!114 &114695852491789056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 9dc3480b-4896-40b2-bced-c1c11bcd28d4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I killed them all!
+  children:
+  - 1dc1cc2b-914f-4746-8fde-02092bd26bb8
+  rect:
+    serializedVersion: 2
+    x: 284
+    y: 521
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 2
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 2
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 3
+        negate: 1
+--- !u!114 &114829557897429856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 51663f87-ffb4-4a79-871c-c77c1b2ba8d5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I thought you are brave !
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1525
+    y: 324
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114990947496964496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 482edcb0-d5aa-4354-a9b5-930dfa4ddc2f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sorry, I'm busy
+  children:
+  - 51663f87-ffb4-4a79-871c-c77c1b2ba8d5
+  rect:
+    serializedVersion: 2
+    x: 274
+    y: 290
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 2
+        negate: 1

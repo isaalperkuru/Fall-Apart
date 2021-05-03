@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Quest 2
   m_EditorClassIdentifier: 
   objectives:
-  - reference: Talk
-    description: Talk to old man
-  rewards:
-  - number: 1
-    item: {fileID: 11400000, guid: 1a67afc34e3ee9842bae54ec1c00762e, type: 2}
+  - reference: Boss
+    description: Kill The Boss
+  rewards: []

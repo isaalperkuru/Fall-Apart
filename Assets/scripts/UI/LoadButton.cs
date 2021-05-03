@@ -15,6 +15,7 @@ namespace RPG.UI
 
         public void NewGame()
         {
+            FindObjectOfType<SavingWrapper>().Delete();
             SceneManager.LoadScene(1);
         }
 
