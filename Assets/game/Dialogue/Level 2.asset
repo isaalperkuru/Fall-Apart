@@ -1,0 +1,357 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdc46aa22a80d14391a43324595e420, type: 3}
+  m_Name: Level 2
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114996371089840974}
+  - {fileID: 114354382889501508}
+  - {fileID: 114581931588844284}
+  - {fileID: 114207876208713746}
+  - {fileID: 114469004640118008}
+  - {fileID: 114732879784465098}
+  - {fileID: 114396285352663560}
+  - {fileID: 114375475388670470}
+  - {fileID: 114957003151202630}
+  - {fileID: 114556011055835390}
+  - {fileID: 114413638960332968}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &114207876208713746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: f467acd4-c695-453f-89d3-7288c84c7a26
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm working on it
+  children:
+  - 599c0857-be1a-4ef5-975f-750ef7264359
+  rect:
+    serializedVersion: 2
+    x: 264
+    y: 231
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 4
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 4
+        negate: 1
+--- !u!114 &114354382889501508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 09c113b0-7d57-46d6-b285-c85e64e7d925
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Yes, Mr. Brown! I heard every village on the marigold road was under attack.
+    I saved the first village near the road from their troubles. Tell me what happened
+    here? '
+  children:
+  - c699d78c-ae0f-474b-8460-d901e58c88cc
+  rect:
+    serializedVersion: 2
+    x: 262
+    y: 14
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 4
+        negate: 1
+--- !u!114 &114375475388670470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 678e59a5-0736-4cd9-8ae3-08f7b58ab0ca
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1026
+    y: 17
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: GiveQuest4
+  condition:
+    and: []
+--- !u!114 &114396285352663560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 5aa8e55b-1a29-4253-9b0e-5eff44181966
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I will clear the valley and save the town!
+  children:
+  - 678e59a5-0736-4cd9-8ae3-08f7b58ab0ca
+  rect:
+    serializedVersion: 2
+    x: 776
+    y: 17
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114413638960332968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 44d5dc81-aa99-425b-8886-d09acc12eab8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior! You saved the Treetown! Here is your reward
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 521
+    y: 341
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: CompleteQuest5
+  condition:
+    and: []
+--- !u!114 &114469004640118008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 22e7d1df-1fd5-412a-82e0-6763ac003af1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I cleaned the valley!
+  children:
+  - 44d5dc81-aa99-425b-8886-d09acc12eab8
+  rect:
+    serializedVersion: 2
+    x: 271
+    y: 341
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 4
+        negate: 0
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 5
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 5
+        negate: 1
+--- !u!114 &114556011055835390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 599c0857-be1a-4ef5-975f-750ef7264359
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Okay
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 514
+    y: 231
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114581931588844284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 5c9532d8-78b7-4523-bbdc-0caf00ebca25
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sorry, I'm Busy
+  children:
+  - 33cf8446-3079-45fc-850f-c138717890ad
+  rect:
+    serializedVersion: 2
+    x: 268
+    y: 118
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 4
+        negate: 1
+--- !u!114 &114732879784465098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: c699d78c-ae0f-474b-8460-d901e58c88cc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: The witch queen came a few days ago and destroyed the trees in our valley.
+    As treetown, we have preserved our precious bonsai trees in the valley for centuries,
+    but only our ancient tree in the town center remains. The soldiers sent by the
+    kingdom attacked the valley but were defeated. One of the villagers saw what was
+    going on. The villager said witch queen sent a soldier across the ocean with a
+    punch. There were no survivors of the soldiers, and we heard that the Witch queen
+    left some of their soldiers in the valley. Can you clear the valley from the soldiers
+    of the witch queen, warrior?
+  children:
+  - 5aa8e55b-1a29-4253-9b0e-5eff44181966
+  - 5c9532d8-78b7-4523-bbdc-0caf00ebca25
+  rect:
+    serializedVersion: 2
+    x: 526
+    y: 17
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114957003151202630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 33cf8446-3079-45fc-850f-c138717890ad
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Shame on you!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 538
+    y: 130
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114996371089840974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 72e9c327-2727-4f57-9e0d-57e180d83c74
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Hello warrior! I am Mr. Brown! Did you come to help us? '
+  children:
+  - 09c113b0-7d57-46d6-b285-c85e64e7d925
+  - 5c9532d8-78b7-4523-bbdc-0caf00ebca25
+  - f467acd4-c695-453f-89d3-7288c84c7a26
+  - 22e7d1df-1fd5-412a-82e0-6763ac003af1
+  rect:
+    serializedVersion: 2
+    x: 4
+    y: 78
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

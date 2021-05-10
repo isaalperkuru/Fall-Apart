@@ -74,6 +74,13 @@ namespace RPG.Quests
             }
         }
 
+        bool IsQuestComplete(string parameter)
+        {
+            if (parameter == null) return false;
+            var statusToCheck = GetQuestStatus(Quest.GetByName(parameter));
+            return statusToCheck == null ? false : statusToCheck.IsComplete();
+        }
+
         public object CaptureState()
         {
             List<object> state = new List<object>();
@@ -103,7 +110,7 @@ namespace RPG.Quests
                 case "HasQuest":
                     return HasQuest(Quest.GetByName(parameters[0]));
                 case "CompletedQuest":
-                    return GetQuestStatus(Quest.GetByName(parameters[0])).IsComplete();
+                    return IsQuestComplete(parameters[0]);
             }
 
             return null;

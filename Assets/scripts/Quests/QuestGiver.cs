@@ -7,7 +7,7 @@ namespace RPG.Quests
     public class QuestGiver : MonoBehaviour
     {
         [SerializeField] Quest quest;
-        public bool givedQuest = false;
+        bool givedQuest = false;
 
         public void GiveQuest()
         {

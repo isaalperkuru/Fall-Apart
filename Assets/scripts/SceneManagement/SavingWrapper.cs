@@ -24,11 +24,11 @@ namespace RPG.SceneManagement
         }
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.L))
+            if (Input.GetKeyDown(KeyCode.F9))
             {
                 LoadFromLastSave();
             }
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.F5))
             {
                 Save();
             }

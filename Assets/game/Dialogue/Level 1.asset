@@ -82,12 +82,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    and:
-    - or:
-      - predicate: HasQuest
-        parameter:
-        - Quest 1
-        negate: 0
+    and: []
 --- !u!114 &114098398790860976
 MonoBehaviour:
   m_ObjectHideFlags: 0
