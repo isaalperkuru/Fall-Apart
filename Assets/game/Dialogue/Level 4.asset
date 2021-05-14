@@ -1,0 +1,352 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdc46aa22a80d14391a43324595e420, type: 3}
+  m_Name: Level 4
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114803614308354192}
+  - {fileID: 114839445123630462}
+  - {fileID: 114537892406768074}
+  - {fileID: 114153275004769444}
+  - {fileID: 114437234647875972}
+  - {fileID: 114497279700504532}
+  - {fileID: 114365604328167886}
+  - {fileID: 114401999407771662}
+  - {fileID: 114100689612096994}
+  - {fileID: 114898959053846312}
+  - {fileID: 114975536529995712}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &114100689612096994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 45dd7cc4-2791-4c5d-a970-a974d74fc226
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: allright
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 532
+    y: 256
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114153275004769444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: e3e30a94-909f-44a2-8080-8d22ac0a1eb7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I will Mr. Noble. I will!
+  children:
+  - a537e11f-8c40-488b-a216-e762678c7556
+  rect:
+    serializedVersion: 2
+    x: 759
+    y: 29
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114365604328167886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 424aa28f-b104-4924-b98f-eb1978071a0c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: We are rich because we are successful. Get lost coward.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 526
+    y: 154
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114401999407771662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: d5808577-d481-4c97-bacf-69363b84b95b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I heard you.
+  children:
+  - 45dd7cc4-2791-4c5d-a970-a974d74fc226
+  rect:
+    serializedVersion: 2
+    x: 267
+    y: 263
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 8
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 8
+        negate: 1
+--- !u!114 &114437234647875972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: a537e11f-8c40-488b-a216-e762678c7556
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior !
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1007
+    y: 29
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: giveQuest8
+  condition:
+    and: []
+--- !u!114 &114497279700504532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 8660f05d-f742-466f-af7a-986d1ceef8f5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I don't help rich people
+  children:
+  - 424aa28f-b104-4924-b98f-eb1978071a0c
+  rect:
+    serializedVersion: 2
+    x: 279
+    y: 154
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 8
+        negate: 1
+--- !u!114 &114537892406768074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: cbf8fa32-068b-4f56-8e18-e8eab4ace012
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Soon the Witch Queen arrived and summoned her soldiers from underground and
+    slaughtered many prominent people of the kingdom. As She went, she said, "May
+    the torment of nature be upon you" and summoned a beast. They went towards the
+    forest and we built a wall behind them. Will you help us, warrior? '
+  children:
+  - e3e30a94-909f-44a2-8080-8d22ac0a1eb7
+  - 8660f05d-f742-466f-af7a-986d1ceef8f5
+  rect:
+    serializedVersion: 2
+    x: 509
+    y: 29
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114803614308354192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 0c898518-60f4-4f24-a8b8-38b726b55b32
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hello warrior! I am Mr. Noble and this is Rich Town. Leaders of the kingdom,
+    bankers, architects, scientists, and senate members live here.
+  children:
+  - cbcc9458-88f4-4670-a7a4-904cd99e811d
+  - 8660f05d-f742-466f-af7a-986d1ceef8f5
+  - d5808577-d481-4c97-bacf-69363b84b95b
+  - 7701188a-1972-4c63-8f03-ad772ec51a0c
+  rect:
+    serializedVersion: 2
+    x: 32
+    y: 99
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114839445123630462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: cbcc9458-88f4-4670-a7a4-904cd99e811d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'What happened here, Mr. Noble? '
+  children:
+  - cbf8fa32-068b-4f56-8e18-e8eab4ace012
+  rect:
+    serializedVersion: 2
+    x: 278
+    y: 42
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 8
+        negate: 1
+--- !u!114 &114898959053846312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 7701188a-1972-4c63-8f03-ad772ec51a0c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I cleared the forrest
+  children:
+  - 53c0bdf5-21fb-4934-81cf-a019f38dc8a8
+  rect:
+    serializedVersion: 2
+    x: 271
+    y: 386
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 8
+        negate: 0
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 9
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 9
+        negate: 1
+--- !u!114 &114975536529995712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 53c0bdf5-21fb-4934-81cf-a019f38dc8a8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior! Here is your reward!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 525
+    y: 382
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: completeQuest9
+  condition:
+    and: []

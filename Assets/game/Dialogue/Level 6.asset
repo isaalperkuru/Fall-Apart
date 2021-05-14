@@ -1,0 +1,353 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdc46aa22a80d14391a43324595e420, type: 3}
+  m_Name: Level 6
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114664444794995398}
+  - {fileID: 114085923635751080}
+  - {fileID: 114420115063727344}
+  - {fileID: 114604700806481304}
+  - {fileID: 114473369037449388}
+  - {fileID: 114478856543468816}
+  - {fileID: 114720436565551840}
+  - {fileID: 114755463608556258}
+  - {fileID: 114719495149021868}
+  - {fileID: 114701405583652434}
+  - {fileID: 114322110597629116}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &114085923635751080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 9300814a-98eb-4e02-880b-8a5c2dbf6d53
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'What happened here, Mr. Gold? '
+  children:
+  - 5b5b9b0b-bc1f-4560-8db3-336cdb28a3df
+  rect:
+    serializedVersion: 2
+    x: 293
+    y: 34
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 12
+        negate: 1
+--- !u!114 &114322110597629116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: c35ad9dd-8273-4b74-9f8e-5cf93a9cb90f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior! Here is your reward
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 547
+    y: 361
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: completeQuest13
+  condition:
+    and: []
+--- !u!114 &114420115063727344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 5b5b9b0b-bc1f-4560-8db3-336cdb28a3df
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'The witch queen came and destroyed all our business areas. On his way, he
+    left soldiers in our marble mine area. There is a definite monster somewhere out
+    there, because I think every step of the monster is causing an earthquake. Will
+    you help us, warrior? '
+  children:
+  - 432bab04-813d-4542-975d-4b08af74a981
+  - a75f726e-dbd3-40ca-b780-8c8bc7fb9192
+  rect:
+    serializedVersion: 2
+    x: 542
+    y: 25
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114473369037449388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 08e18276-9cc3-474a-9897-053d4d129820
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1035
+    y: 24
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: giveQuest12
+  condition:
+    and: []
+--- !u!114 &114478856543468816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: a75f726e-dbd3-40ca-b780-8c8bc7fb9192
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm sorry, I can't help
+  children:
+  - 52490abf-9da9-45c8-b266-6a3ad7fe716f
+  rect:
+    serializedVersion: 2
+    x: 292
+    y: 148
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 12
+        negate: 1
+--- !u!114 &114604700806481304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 432bab04-813d-4542-975d-4b08af74a981
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I will!
+  children:
+  - 08e18276-9cc3-474a-9897-053d4d129820
+  rect:
+    serializedVersion: 2
+    x: 792
+    y: 25
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114664444794995398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: b06dc018-bb3f-4daa-8936-b34c1051efbe
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hello warrior! I am Mr. Gold and this is the miners' village. Our marble mining
+    area, one of our largest mining areas, was captured and other mining areas were
+    also destroyed.
+  children:
+  - 9300814a-98eb-4e02-880b-8a5c2dbf6d53
+  - a75f726e-dbd3-40ca-b780-8c8bc7fb9192
+  - d29325d6-d6e8-4ce9-9136-d9139a06df40
+  - be3d830e-11df-47b6-9f30-1ccc0255bdb7
+  rect:
+    serializedVersion: 2
+    x: 57
+    y: 104
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114701405583652434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: be3d830e-11df-47b6-9f30-1ccc0255bdb7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I clear the marble mining area!
+  children:
+  - c35ad9dd-8273-4b74-9f8e-5cf93a9cb90f
+  rect:
+    serializedVersion: 2
+    x: 297
+    y: 361
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 12
+        negate: 0
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 13
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 13
+        negate: 1
+--- !u!114 &114719495149021868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 1d233fe2-a034-4e6d-8da5-c9120ce45db9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Okay
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 547
+    y: 250
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114720436565551840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 52490abf-9da9-45c8-b266-6a3ad7fe716f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You are piece of marble!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 542
+    y: 148
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114755463608556258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: d29325d6-d6e8-4ce9-9136-d9139a06df40
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm on my way!
+  children:
+  - 1d233fe2-a034-4e6d-8da5-c9120ce45db9
+  rect:
+    serializedVersion: 2
+    x: 297
+    y: 251
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 12
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 12
+        negate: 1

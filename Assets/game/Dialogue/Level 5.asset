@@ -1,0 +1,352 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdc46aa22a80d14391a43324595e420, type: 3}
+  m_Name: Level 5
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114613300373234768}
+  - {fileID: 114831978011373866}
+  - {fileID: 114661138532103428}
+  - {fileID: 114477497531900604}
+  - {fileID: 114052860050991524}
+  - {fileID: 114574797746556158}
+  - {fileID: 114202686908955930}
+  - {fileID: 114332801772725724}
+  - {fileID: 114409960054845216}
+  - {fileID: 114713170155640910}
+  - {fileID: 114164405486409196}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &114052860050991524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 01f48cce-7b60-4f10-8871-eedede8b72f9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1023
+    y: 27
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: giveQuest10
+  condition:
+    and: []
+--- !u!114 &114164405486409196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 7c119314-ebad-4100-b119-fcd7eb787497
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior! here is your reward
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 535
+    y: 366
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: completeQuest11
+  condition:
+    and: []
+--- !u!114 &114202686908955930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 0484a32e-f55b-4ba4-9262-e2ec76d89176
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: What?! WHY?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 541
+    y: 148
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114332801772725724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: e49c91cf-e844-498b-8ac1-caf35f47dbda
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm on my way to the hills
+  children:
+  - 98fcc329-6544-4132-afa7-d8917ee0e0c4
+  rect:
+    serializedVersion: 2
+    x: 290
+    y: 253
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 10
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 10
+        negate: 1
+--- !u!114 &114409960054845216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 98fcc329-6544-4132-afa7-d8917ee0e0c4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh okay!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 540
+    y: 253
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114477497531900604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 7d67e03e-2891-4ab0-b8fe-5e97d51e92b1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I will Mr. Apple
+  children:
+  - 01f48cce-7b60-4f10-8871-eedede8b72f9
+  rect:
+    serializedVersion: 2
+    x: 782
+    y: 27
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114574797746556158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: db996c02-258e-4e90-afb4-5fe431258695
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I don't care
+  children:
+  - 0484a32e-f55b-4ba4-9262-e2ec76d89176
+  rect:
+    serializedVersion: 2
+    x: 291
+    y: 148
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 10
+        negate: 1
+--- !u!114 &114613300373234768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 0054907b-77e2-4ddb-b7dd-25d39e6d0864
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Hello warrior! I am Mr. Apple and this is Village of Farmers. Farmers live
+    here and we provide food to all parts of the kingdom. But we''re in trouble! '
+  children:
+  - f1cd5a64-2e41-429e-a133-99b06ff415d2
+  - db996c02-258e-4e90-afb4-5fe431258695
+  - e49c91cf-e844-498b-8ac1-caf35f47dbda
+  - f4c5d008-5e2a-4800-b8d8-ce7c44199e87
+  rect:
+    serializedVersion: 2
+    x: 37
+    y: 96
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114661138532103428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 37bc227a-161b-47cb-9c09-8fb7e063a84c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: The Witch Queen came with heavily armored soldiers and with her magic she
+    turned whole farm lands into acorn trees. She destroyed all our farms! Her soldiers
+    were terrifying, I'm sure they weren't human. Most of her soldiers went with her,
+    and the rest are in the hills. Can you help us warrior?
+  children:
+  - 7d67e03e-2891-4ab0-b8fe-5e97d51e92b1
+  - db996c02-258e-4e90-afb4-5fe431258695
+  rect:
+    serializedVersion: 2
+    x: 531
+    y: 30
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114713170155640910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: f4c5d008-5e2a-4800-b8d8-ce7c44199e87
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I cleared the hills!
+  children:
+  - 7c119314-ebad-4100-b119-fcd7eb787497
+  rect:
+    serializedVersion: 2
+    x: 285
+    y: 366
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 10
+        negate: 0
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 11
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 11
+        negate: 1
+--- !u!114 &114831978011373866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: f1cd5a64-2e41-429e-a133-99b06ff415d2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'I did not see any farm when I was coming. What is the problem? '
+  children:
+  - 37bc227a-161b-47cb-9c09-8fb7e063a84c
+  rect:
+    serializedVersion: 2
+    x: 287
+    y: 32
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 10
+        negate: 1

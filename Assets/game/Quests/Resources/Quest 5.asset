@@ -16,5 +16,5 @@ MonoBehaviour:
   - reference: Objective5
     description: Talk with Mr. Brown and get your reward
   rewards:
-  - number: 10
+  - number: 20
     item: {fileID: 11400000, guid: 7cd59f23a243ccc458856ad1d013b8a6, type: 2}
