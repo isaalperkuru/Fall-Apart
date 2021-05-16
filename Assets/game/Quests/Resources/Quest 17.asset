@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca1778692624ed4298c187e2317153b, type: 3}
+  m_Name: Quest 17
+  m_EditorClassIdentifier: 
+  objectives:
+  - reference: Quest17
+    description: Talk to Mr. Helmschmied and get your reward
+  rewards:
+  - number: 10
+    item: {fileID: 11400000, guid: 856cef15be95f6f4eba84a32814ef9e9, type: 2}
+  - number: 1
+    item: {fileID: 11400000, guid: aedb8a80b88c3b04198a44316c7a3bf8, type: 2}
+  - number: 1
+    item: {fileID: 11400000, guid: 9e306bc40f7b11d458bd135137d603cc, type: 2}
+  - number: 1
+    item: {fileID: 11400000, guid: c242cf00345b98949a2f659054c26c33, type: 2}
+  - number: 1
+    item: {fileID: 11400000, guid: 70c0e257b93601d43a49afc99e194f9a, type: 2}
+  - number: 1
+    item: {fileID: 11400000, guid: 756147a9480081043a74838fa199bca4, type: 2}

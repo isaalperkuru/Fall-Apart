@@ -1,0 +1,351 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdc46aa22a80d14391a43324595e420, type: 3}
+  m_Name: Level 8
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114725784821169422}
+  - {fileID: 114371596746305614}
+  - {fileID: 114830623678211106}
+  - {fileID: 114046384883866696}
+  - {fileID: 114269141566621496}
+  - {fileID: 114638182263609428}
+  - {fileID: 114764131377651166}
+  - {fileID: 114215800565352620}
+  - {fileID: 114524279952340078}
+  - {fileID: 114019978538499598}
+  - {fileID: 114987806309606166}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &114019978538499598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: fcb2b475-d64e-4440-8a05-6da6dc6396c6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I killed all the enemies!
+  children:
+  - 832abcf2-42dd-4e85-944b-438550500eaf
+  rect:
+    serializedVersion: 2
+    x: 307
+    y: 370
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 16
+        negate: 0
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 17
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 17
+        negate: 1
+--- !u!114 &114046384883866696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: ffa11ef5-dd50-4294-a833-4f2bfb289288
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Of course! It is an honor to help the kingdom''s finest blacksmith. '
+  children:
+  - ca923997-7948-4eea-a6a5-4085e668ab55
+  rect:
+    serializedVersion: 2
+    x: 808
+    y: 47
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114215800565352620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 1f28b551-9d4e-4489-9869-88c734d0770a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm on my way
+  children:
+  - 1396c8a6-d750-4e1e-9f73-cf2ce15e651e
+  rect:
+    serializedVersion: 2
+    x: 308
+    y: 275
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 16
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 16
+        negate: 1
+--- !u!114 &114269141566621496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: ca923997-7948-4eea-a6a5-4085e668ab55
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1059
+    y: 44
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: giveQuest16
+  condition:
+    and: []
+--- !u!114 &114371596746305614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: ccd545c5-1604-4d25-afc2-33ca8a96b63e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'I heard you have a problem, Mr. Helmschmied. '
+  children:
+  - 3704e0ee-5762-459d-94c0-d940f7c17fcb
+  rect:
+    serializedVersion: 2
+    x: 307
+    y: 48
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 16
+        negate: 1
+--- !u!114 &114524279952340078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 1396c8a6-d750-4e1e-9f73-cf2ce15e651e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Allright
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 558
+    y: 275
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114638182263609428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 6653f356-65db-4916-8867-7f46764ee3df
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I can't help you
+  children:
+  - bf7eedd0-6398-4550-9f05-ae909e1e947b
+  rect:
+    serializedVersion: 2
+    x: 311
+    y: 172
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 16
+        negate: 1
+--- !u!114 &114725784821169422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 62fc3a93-7da7-4d7b-bd9a-d05c9f315326
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Greetings warrior! I am Mr. Helmschmied and this is Blacksmith Town. All
+    weapons, armor and tools in the Kingdom are made in this town. '
+  children:
+  - ccd545c5-1604-4d25-afc2-33ca8a96b63e
+  - 6653f356-65db-4916-8867-7f46764ee3df
+  - 1f28b551-9d4e-4489-9869-88c734d0770a
+  - fcb2b475-d64e-4440-8a05-6da6dc6396c6
+  rect:
+    serializedVersion: 2
+    x: 65
+    y: 97
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114764131377651166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: bf7eedd0-6398-4550-9f05-ae909e1e947b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: But Why?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 561
+    y: 172
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114830623678211106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 3704e0ee-5762-459d-94c0-d940f7c17fcb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Our problem is the same as everyone's problem. The Witch Queen came and destroyed
+    our warehouse, but I was only able to protect my armor set that I had recently
+    made. They are yours if you help us. Will you help us?
+  children:
+  - ffa11ef5-dd50-4294-a833-4f2bfb289288
+  - 6653f356-65db-4916-8867-7f46764ee3df
+  rect:
+    serializedVersion: 2
+    x: 557
+    y: 48
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114987806309606166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 832abcf2-42dd-4e85-944b-438550500eaf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you warrior! Here is your reward. High Quality armors
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 557
+    y: 369
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: completeQuest17
+  condition:
+    and: []

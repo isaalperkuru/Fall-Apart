@@ -1,0 +1,408 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdc46aa22a80d14391a43324595e420, type: 3}
+  m_Name: Level 9
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114208361324694366}
+  - {fileID: 114480211589571156}
+  - {fileID: 114125431321313402}
+  - {fileID: 114442102837627092}
+  - {fileID: 114500024651241804}
+  - {fileID: 114415961512655670}
+  - {fileID: 114374070525026328}
+  - {fileID: 114277037712558034}
+  - {fileID: 114090918407572748}
+  - {fileID: 114427412910476888}
+  - {fileID: 114939486733687380}
+  - {fileID: 114116247766425842}
+  - {fileID: 114406649762946606}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &114090918407572748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 37002e46-fda7-4844-a27b-46b99a61f610
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Calm down! Have a beer! BURP * '
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 533
+    y: 167
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114116247766425842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: d2c5738c-68af-4727-b4af-8e04e8166d1d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I killed them all.
+  children:
+  - 7377b664-c370-412b-8401-1b332a32aa7f
+  rect:
+    serializedVersion: 2
+    x: 286
+    y: 382
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 18
+        negate: 0
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 19
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 19
+        negate: 1
+--- !u!114 &114125431321313402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: c386f260-b98b-4c39-9bd5-c35067ff9dba
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Of course the Witch Queen! She has soldiers throwing fireballs. Guess where
+    they dropped the fireballs. Of course to beer barrels! I hate them! I managed
+    to save a few barrels in my secret cellar. Don't tell anyone in town! I told them
+    that all the barrels were destroyed. Does the day pass without getting drunk?
+    I do not think so!
+  children:
+  - 1373ce71-1490-4b65-aeac-ba5d5beeb5b7
+  rect:
+    serializedVersion: 2
+    x: 536
+    y: 25
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114208361324694366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 5c21d21a-6d8c-4986-85b4-7c91a68098be
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Greetings warrior! I''m Bar Steward and this is the drunk town. We need your
+    help. '
+  children:
+  - aa88c068-6a0e-4453-8d99-e6283ec2809b
+  - 2ccc687f-96c5-4418-80eb-ed031da6c81f
+  - 9c145890-d524-4c49-b681-f88b4a38fff7
+  - d2c5738c-68af-4727-b4af-8e04e8166d1d
+  rect:
+    serializedVersion: 2
+    x: 30
+    y: 124
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114277037712558034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 2ccc687f-96c5-4418-80eb-ed031da6c81f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I won't help a drunk man!
+  children:
+  - 37002e46-fda7-4844-a27b-46b99a61f610
+  rect:
+    serializedVersion: 2
+    x: 285
+    y: 170
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 18
+        negate: 1
+--- !u!114 &114374070525026328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 3154f142-3e53-47af-842e-c07f9780b50b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Okay. Let me have another beer. BURP *
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1513
+    y: 24
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: giveQuest18
+  condition:
+    and: []
+--- !u!114 &114406649762946606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 7377b664-c370-412b-8401-1b332a32aa7f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Okay here is your sword. Now get lost! BURP*
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 536
+    y: 382
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: completeQuest19
+  condition:
+    and: []
+--- !u!114 &114415961512655670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 31c58e24-b5d4-4c17-bd76-25f99dc39d05
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'I don''t know how I can trust you but I will help you. '
+  children:
+  - 3154f142-3e53-47af-842e-c07f9780b50b
+  rect:
+    serializedVersion: 2
+    x: 1263
+    y: 24
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114427412910476888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 9c145890-d524-4c49-b681-f88b4a38fff7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'Be patient! '
+  children:
+  - e4be72ba-6a56-42aa-a10a-1572f80ae643
+  rect:
+    serializedVersion: 2
+    x: 282
+    y: 283
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 18
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameter:
+        - Quest 19
+        negate: 1
+--- !u!114 &114442102837627092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: 1373ce71-1490-4b65-aeac-ba5d5beeb5b7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Come on, get to the point!
+  children:
+  - cca72045-6e5a-474a-a5f4-4703934364f9
+  rect:
+    serializedVersion: 2
+    x: 766
+    y: 25
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114480211589571156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: aa88c068-6a0e-4453-8d99-e6283ec2809b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'What is the problem?  '
+  children:
+  - c386f260-b98b-4c39-9bd5-c35067ff9dba
+  rect:
+    serializedVersion: 2
+    x: 290
+    y: 28
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameter:
+        - Quest 18
+        negate: 1
+--- !u!114 &114500024651241804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: cca72045-6e5a-474a-a5f4-4703934364f9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'The Witch Queen''s soldiers are in the forest, if you destroy them I can
+    give you a sword I recently stole from a nobleman. What do you say ? '
+  children:
+  - 31c58e24-b5d4-4c17-bd76-25f99dc39d05
+  - 2ccc687f-96c5-4418-80eb-ed031da6c81f
+  rect:
+    serializedVersion: 2
+    x: 1013
+    y: 24
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &114939486733687380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e86e393773e874ba267e7aed60d7fd, type: 3}
+  m_Name: e4be72ba-6a56-42aa-a10a-1572f80ae643
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Come on! 9542131 years have passed! BURP*
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 532
+    y: 283
+    width: 200
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

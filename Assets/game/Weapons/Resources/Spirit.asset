@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd3bd69cb233c904c8c9940415992354, type: 3}
+  m_Name: Spirit
+  m_EditorClassIdentifier: 
+  itemID: 1aa3a65c-66d5-49e5-aad4-68c0a1fc3f9a
+  displayName: Spirit
+  description: 
+  icon: {fileID: 0}
+  pickup: {fileID: 0}
+  stackable: 0
+  allowedEquipLocation: 5
+  animatorOverride: {fileID: 22100000, guid: 7b07be81eb1f3fa4da4cdfd6f7195a55, type: 2}
+  equippedPrefab: {fileID: 1084865604434492514, guid: 407cf85c3e6933f458c468c24ec5e1ea,
+    type: 3}
+  weaponDamage: 5
+  percentageBonus: 0
+  weaponRange: 2
+  isRightHanded: 1
+  projectile: {fileID: 0}

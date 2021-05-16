@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca1778692624ed4298c187e2317153b, type: 3}
+  m_Name: Quest 15
+  m_EditorClassIdentifier: 
+  objectives:
+  - reference: Quest15
+    description: Talk to Saint Dominic and get your reward
+  rewards:
+  - number: 30
+    item: {fileID: 11400000, guid: a1ab593b2fa2a4a4da30e105c2e7cd6f, type: 2}
